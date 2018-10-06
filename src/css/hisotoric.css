@@ -1,0 +1,13 @@
+.historic-card {
+    margin: 10px 10px 10px;
+    text-align: center;
+}
+
+.card-header > h5 {
+    display: inline;
+}
+
+.card-header > span {
+    display: inline;
+    text-align: right;
+}

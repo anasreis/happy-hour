@@ -1,0 +1,20 @@
+ul {
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 20px 20px 20px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+    background-color: #F7F7F7;
+}
+
+ul > li {
+    width: 30%;
+}
+
+ul > li > a {
+    color: #FFBD13;
+}
+
+ul > li > a:hover {
+    color: #D1982F;
+}
