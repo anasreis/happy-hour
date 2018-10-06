@@ -1,0 +1,63 @@
+{
+    "id": 1,
+    "user": 1,
+    "userName": "Marcos Sunimar",
+    "guys": [
+        {
+            "id": 1,
+            "userName": "Marcos Sunimar",
+            "consumed": [
+                {
+                    "id": 1,
+                    "name": "Batata"
+                },
+                {
+                    "id": 2,
+                    "name": "Cerveja"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "userName": "Victor Andrade",
+            "consumed": [
+                {
+                    "id": 1,
+                    "name": "Batata"
+                },
+                {
+                    "id": 2,
+                    "name": "Cerveja"
+                },
+                {
+                    "id": 3,
+                    "name":"Cachaça 51 1L"
+                }
+            ]
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Batata",
+            "amount": 3,
+            "price": 20.00,
+            "users": [
+                1,
+                2
+            ]
+        }, 
+        {
+            "id": 2,
+            "name": "Cerveja",
+            "amount": 20,
+            "price": 15.00
+        },
+        {
+            "id": 3,
+            "name": "Cachaça 51 1L",
+            "amount": 2,
+            "price": 51.00
+        }
+    ]
+}
