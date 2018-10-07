@@ -1,3 +1,13 @@
+.historic-list {
+    list-style: none;
+    padding: 0px 0px 0px;
+}
+
+.historic-node {
+    list-style: none;
+    padding: 0px 0px 0px;   
+}
+
 .historic-card {
     margin: 10px 10px 10px;
     text-align: center;

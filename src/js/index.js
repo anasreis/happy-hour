@@ -1,15 +1,24 @@
-import { buildHeader, buildFooter, routerLink } from './router'
 import 'modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css'
 import 'modules/font-awesome/css/font-awesome.min.css'
 import '../css/index.css'
 
+import { buildHeader, buildFooter, routerLink } from './router'
+import { getLocalData } from './services'
+import { renderHistoricRows } from './view/historic'
+
 const INTRODUCTION_TEMPLATE = 'introduction.html';
-const HOME_TEMPLATE = 'historic.html';
 
 routerLink(INTRODUCTION_TEMPLATE);
 
-setTimeout(() => {
+getLocalData().then(
+    res => {
+        let historics = res.historics;
+        initializeApp(historics);
+    }
+);
+
+const initializeApp = (historics = null) => {
     buildFooter();
     buildHeader();
-    routerLink(HOME_TEMPLATE);
-}, 2000);
+    renderHistoricRows(historics);
+}

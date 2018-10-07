@@ -1,4 +1,4 @@
-ul {
+.nav-bar {
     bottom: 0;
     position: fixed;
     overflow: hidden;
@@ -7,14 +7,14 @@ ul {
     background-color: #F7F7F7;
 }
 
-ul > li {
+.nav-bar > li {
     width: 30%;
 }
 
-ul > li > a {
+.nav-bar > li > a {
     color: #FFBD13;
 }
 
-ul > li > a:hover {
+.nav-bar > li > a:hover {
     color: #D1982F;
 }
