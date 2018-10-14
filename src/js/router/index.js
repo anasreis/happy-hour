@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-const TEMPLATE_BASE = '../static/templates/';
+const TEMPLATE_BASE = 'http://localhost:8080/static/templates/';
 
 export const routerLink = route => {
     const CONTENT_ID = 'content';
