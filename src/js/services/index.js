@@ -8,6 +8,10 @@ export const getLocalData = () => {
         type: 'get',
         dataType: 'json'
     };
+    return get(header);
+}
+
+const get = (header) => {
     return new Promise((resolve, reject) => {
         $.ajax(header).done(resolve).fail(reject);
     });

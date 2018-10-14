@@ -1,42 +1,27 @@
 {
-    "historics": [
+    "invoices": [
         {
             "id": 1,
             "user": 1,
             "date": "02/12/2018",
             "userName": "Marcos Sunimar",
-            "guys": [
+            "location": "Growleria",
+            "totalValue": 237.00,
+            "users": [
                 {
                     "id": 1,
-                    "userName": "Marcos Sunimar",
-                    "consumed": [
-                        {
-                            "id": 1,
-                            "name": "Batata"
-                        },
-                        {
-                            "id": 2,
-                            "name": "Cerveja"
-                        }
-                    ]
+                    "name": "Enzo",
+                    "valueToPay": 85.00
                 },
                 {
                     "id": 2,
-                    "userName": "Victor Andrade",
-                    "consumed": [
-                        {
-                            "id": 1,
-                            "name": "Batata"
-                        },
-                        {
-                            "id": 2,
-                            "name": "Cerveja"
-                        },
-                        {
-                            "id": 3,
-                            "name": "Cachaça 51 1L"
-                        }
-                    ]
+                    "name": "Valentina",
+                    "valueToPay": 127.00
+                },
+                {
+                    "id": 3,
+                    "name": "Pietra",
+                    "valueToPay": 25.00
                 }
             ],
             "products": [
@@ -44,23 +29,33 @@
                     "id": 1,
                     "name": "Batata",
                     "amount": 3,
-                    "price": 20.00,
+                    "unityValue": 20.00,
+                    "totalValue": 60.00,
                     "users": [
-                        1,
-                        2
+                        1
                     ]
                 },
                 {
                     "id": 2,
                     "name": "Cerveja",
-                    "amount": 20,
-                    "price": 15.00
+                    "amount": 5,
+                    "unityValue": 15.00,
+                    "totalValue": 75.00,
+                    "users": [
+                        1,
+                        2,
+                        3
+                    ]
                 },
                 {
                     "id": 3,
-                    "name": "Cachaça 51 1L",
+                    "name": "Cachaça 51",
                     "amount": 2,
-                    "price": 51.00
+                    "unityValue": 51.00,
+                    "totalValue": 102.00,
+                    "users": [
+                        2
+                    ]
                 }
             ]
         }

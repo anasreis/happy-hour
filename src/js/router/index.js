@@ -7,20 +7,6 @@ export const routerLink = route => {
     redirect(CONTENT_ID, route);
 }
 
-export const buildHeader = () => {
-    const HEADER_ID = 'header';
-    const HEADER_TEMPLATE = 'header.html';
-    redirect(HEADER_ID, HEADER_TEMPLATE);
+export const redirect = (id, templateName) => {
+    $(`#${id}`).load(TEMPLATE_BASE + templateName);
 }
-
-export const buildFooter = () => {
-    const FOOTER_ID = 'footer';
-    const FOOTER_TEMPLATE = 'navbar.html';
-    redirect(FOOTER_ID, FOOTER_TEMPLATE);
-}
-
-export const redirect = (id, route) => {
-    $(`#${id}`).load(TEMPLATE_BASE + route);
-}
-
-window.routerLink = routerLink;
